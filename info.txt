@@ -1,0 +1,4 @@
+  host: "sql12.freemysqlhosting.net",
+  user: "sql12189886",
+  password: "cGMRYFwvQ9",
+  database: "sql12189886"
