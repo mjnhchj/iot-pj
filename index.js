@@ -1,4 +1,4 @@
-const PORT = 3484;					
+const PORT = 8080;					
 
 const plotly = require('plotly')('tungpt7', 'nMEIrgmKOzhOs7WjNBdw');
 var fs = require('fs');
