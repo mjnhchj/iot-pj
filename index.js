@@ -1,4 +1,4 @@
-const PORT = 8080;					
+const PORT = 8000;					
 
 const plotly = require('plotly')('tungpt7', 'nMEIrgmKOzhOs7WjNBdw');
 var fs = require('fs');
@@ -23,7 +23,7 @@ esp8266_namesp.use(middleware);
 webapp_namesp.use(middleware);							
 android_namesp.use(middleware);
 
-server.listen(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT);
+server.listen(process.env.PORT || PORT);
 //app.listen(env.OPENSHIFT_NODEJS_PORT, process.env.OPENSHIFT_NODEJS_IP);
 
 console.log("Server running at: " + ip.address() + ":" + PORT)
