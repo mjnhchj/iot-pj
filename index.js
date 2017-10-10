@@ -24,7 +24,7 @@ webapp_namesp.use(middleware);
 android_namesp.use(middleware);
 
 server.listen(process.env.OPENSHIFT_NODEJS_PORT || PORT);
-app.listen(env.OPENSHIFT_NODEJS_PORT, process.env.OPENSHIFT_NODEJS_IP);
+//app.listen(env.OPENSHIFT_NODEJS_PORT, process.env.OPENSHIFT_NODEJS_IP);
 
 console.log("Server running at: " + ip.address() + ":" + PORT)
 
