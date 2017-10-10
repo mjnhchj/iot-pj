@@ -23,7 +23,9 @@ esp8266_namesp.use(middleware);
 webapp_namesp.use(middleware);							
 android_namesp.use(middleware);
 
-server.listen(process.env.PORT || PORT);										
+server.listen(process.env.OPENSHIFT_NODEJS_PORT || PORT);
+app.listen(env.OPENSHIFT_NODEJS_PORT, process.env.OPENSHIFT_NODEJS_IP);
+
 console.log("Server running at: " + ip.address() + ":" + PORT)
 
 
